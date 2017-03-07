@@ -1,13 +1,14 @@
 <?php
 require '../vendor/autoload.php';
-putenv("SENDGRID_API_KEY=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");
+
 class sendemail{
 	//validate incoming data
 	public $respObj = ['status'=>true, 'message'=>'Your email has been sent','detail'=>''];
 	protected $defFailMsg = 'An error has occurred';
-	protected $toemail, $fromemail, $subject, $message;
+	protected $toemail, $fromemail, $subject, $message, $apiKey;
 	protected $delaySecs = 300;
 	public function __construct() {
+		$this->apiKey = file_get_contents('/home/bcphpuser/backups/sendgrid.env');
 		$this->validate();
 		if ($this->respObj['status']) {
 			$this->submitMail();
@@ -59,7 +60,7 @@ class sendemail{
 		// from
 		$mail->setFrom($email);
 
-		//personalization object		
+		//personalization object
 		$personalization = new SendGrid\Personalization();
 
 		// destination
@@ -93,8 +94,7 @@ class sendemail{
 			$mail->addAttachment($attachment);
 		}
 
-		$apiKey = getenv('SENDGRID_API_KEY');
-		$sg = new \SendGrid($apiKey);
+		$sg = new \SendGrid($this->apiKey);
 
 		// send mail
 		$response = $sg->client->mail()->send()->post($mail);
