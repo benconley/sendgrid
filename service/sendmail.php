@@ -44,7 +44,7 @@ class sendemail{
 		if (!strlen(trim($_POST['message']))){
 			$this->respObj['status'] = false;
 			$this->respObj['message'] = $this->defFailMsg;
-			$this->respObj['detail'] = 'Subject is required';
+			$this->respObj['detail'] = 'Message is required';
 			return;
 		}
 		$this->toemail = $_POST['toemail'];
