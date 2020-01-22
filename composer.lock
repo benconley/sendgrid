@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "sendgrid/php-http-client",
-            "version": "3.10.0",
+            "version": "3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/php-http-client.git",
-                "reference": "be68345f8849797e87c360bde7c71b23e76b67bc"
+                "reference": "06c9f889076e90580b7ae92a55340d6bb84cb1c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/php-http-client/zipball/be68345f8849797e87c360bde7c71b23e76b67bc",
-                "reference": "be68345f8849797e87c360bde7c71b23e76b67bc",
+                "url": "https://api.github.com/repos/sendgrid/php-http-client/zipball/06c9f889076e90580b7ae92a55340d6bb84cb1c3",
+                "reference": "06c9f889076e90580b7ae92a55340d6bb84cb1c3",
                 "shasum": ""
             },
             "require": {
@@ -56,20 +56,20 @@
                 "rest",
                 "sendgrid"
             ],
-            "time": "2019-12-11T19:27:05+00:00"
+            "time": "2020-01-09T18:52:45+00:00"
         },
         {
             "name": "sendgrid/sendgrid",
-            "version": "7.4.0",
+            "version": "7.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/sendgrid-php.git",
-                "reference": "c14768e463e001a5fdd65f47ea788c0d58074062"
+                "reference": "556cc87f8e5938abde4f67e98942c0c7db9b31ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/c14768e463e001a5fdd65f47ea788c0d58074062",
-                "reference": "c14768e463e001a5fdd65f47ea788c0d58074062",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/556cc87f8e5938abde4f67e98942c0c7db9b31ff",
+                "reference": "556cc87f8e5938abde4f67e98942c0c7db9b31ff",
                 "shasum": ""
             },
             "require": {
@@ -113,7 +113,7 @@
                 "sendgrid",
                 "twilio sendgrid"
             ],
-            "time": "2019-12-11T19:48:08+00:00"
+            "time": "2020-01-09T16:07:47+00:00"
         }
     ],
     "packages-dev": [],
